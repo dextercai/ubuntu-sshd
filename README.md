@@ -1,6 +1,6 @@
-# Ubuntu-sshd
+# Ubuntu-sshd-gcc-py
 
-Dockerized SSH service, built on top of [official Ubuntu](https://registry.hub.docker.com/_/ubuntu/) images.
+带有GCC以及Python2.7，3.4环境的以及sshd的ubuntu
 
 ## Image tags
 
@@ -11,9 +11,7 @@ Dockerized SSH service, built on top of [official Ubuntu](https://registry.hub.d
 - rastasheep/ubuntu-sshd:14.04 (trusty)
 - rastasheep/ubuntu-sshd:16.04 (xenial)
 
-## Installed packages
-
-Base:
+## 源镜像来源
 
 - [precise (12.04) minimal](http://packages.ubuntu.com/precise/ubuntu-minimal)
 - [quantal (12.10) minimal](http://packages.ubuntu.com/quantal/ubuntu-minimal)
@@ -22,10 +20,10 @@ Base:
 - [trusty (14.04) minimal](http://packages.ubuntu.com/trusty/ubuntu-minimal)
 - [Xenial (16.04) minimal](http://packages.ubuntu.com/xenial/ubuntu-minimal)
 
-Image specific:
+其他使用:
 - [openssh-server](https://help.ubuntu.com/community/SSH/OpenSSH/Configuring)
 
-Config:
+配置:
 
   - `PermitRootLogin yes`
   - `UsePAM no`
@@ -33,7 +31,7 @@ Config:
   - default command: `/usr/sbin/sshd -D`
   - root password: `root`
 
-## Run example
+## 调用例子
 
 ```bash
 $ sudo docker run -d -P --name test_sshd rastasheep/ubuntu-sshd:14.04
