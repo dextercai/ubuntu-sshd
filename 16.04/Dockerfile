@@ -4,7 +4,7 @@ MAINTAINER DexterCai
 RUN apt-get update
 
 RUN apt-get install -y python2.7 python2.7-dev git git-flow
-RUN apt-get install -y build-essential libssl-dev libevent-dev libjpeg-dev libxml2-dev libxslt-dev python-pip virtualenv
+RUN apt-get install -y build-essential libssl-dev libevent-dev lIBjpeg-dev libxml2-dev libxslt-dev python-pip
 RUN virtualenv --no-site-packages -p /usr/bin/python2.7 ~/.venv/python2.7
 RUN virtualenv --no-site-packages -p /usr/bin/python3.2 ~/.venv/python3.2
 
@@ -17,7 +17,7 @@ RUN git config --global user.name "Your Name"
 RUN git config --global user.email you@email.com
 RUN git config --global color.ui true
 
-RUN apt-get install  build-essential
+RUN apt-get  install  build-essential
 
 RUN apt-get install -y openssh-server
 RUN mkdir /var/run/sshd
