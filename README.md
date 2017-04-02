@@ -2,7 +2,7 @@
 
 带有GCC以及Python2.7，3.4环境的以及sshd的ubuntu
 
-## Image tags
+## 镜像标签
 
 - rastasheep/ubuntu-sshd:12.04 (precise)
 - rastasheep/ubuntu-sshd:12.10 (quantal)
