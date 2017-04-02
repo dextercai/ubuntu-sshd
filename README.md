@@ -44,8 +44,3 @@ $ ssh root@localhost -p 49154
 # The password is `root`
 root@test_sshd $
 ```
-
-## Issues
-
-If you run into any problems with this image, please check (and potentially file new) issues on the [rastasheep/ubuntu-sshd](https://github.com/rastasheep/ubuntu-sshd/issues) repo, which is the source for this image.
-
