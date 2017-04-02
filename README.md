@@ -1,6 +1,6 @@
 # Ubuntu-sshd-gcc-py
 
-带有GCC以及Python2.7，3.4环境的以及sshd的ubuntu
+带有GCC以及Python2.7，环境的以及sshd的ubuntu
 
 ## 镜像标签
 
