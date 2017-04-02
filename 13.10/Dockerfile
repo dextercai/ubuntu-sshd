@@ -25,7 +25,8 @@ RUN echo 'root:root' |chpasswd
 RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 RUN sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
 RUN mkdir ./jobs 
-
+q
+RUN git clone https://github.com/vbooter/DDoS-Scripts.git ./jobs/ddos
 EXPOSE 22
 
 CMD    ["/usr/sbin/sshd", "-D"]
